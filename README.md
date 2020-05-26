@@ -1,4 +1,5 @@
 # DDDAdSdk
+<<<<<<< HEAD
 
 [![CI Status](https://img.shields.io/travis/summerthread/DDDAdSdk.svg?style=flat)](https://travis-ci.org/summerthread/DDDAdSdk)
 [![Version](https://img.shields.io/cocoapods/v/DDDAdSdk.svg?style=flat)](https://cocoapods.org/pods/DDDAdSdk)
@@ -27,3 +28,6 @@ summerthread, summerthread@163.com
 ## License
 
 DDDAdSdk is available under the MIT license. See the LICENSE file for more info.
+=======
+sdsdk
+>>>>>>> 7d16732c36e46ecdb432a850da8145254029490a

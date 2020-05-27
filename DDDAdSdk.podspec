@@ -30,11 +30,15 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'DDDAdSdk/Classes/**/*'
+  s.source_files = 'DDDAdSdk/Classes/**/*.{h,m,mm}'
   
-  # s.resource_bundles = {
-  #   'DDDAdSdk' => ['DDDAdSdk/Assets/*.png']
-  # }
+  # 是否使用静态库。如果podfile指明了use_frameworks!命令，但是pod仓库需要使用静态库则需要设置
+  s.static_framework = true
+  s.requires_arc = true
+  s.resource_bundles = {
+      'BUAdSDK' => ['DDDAdSdk/Assets/BUAdSDK.bundle'],
+      'DyAdSdk' => ['DDDAdSdk/Assets/DyAdSdk.bundle']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

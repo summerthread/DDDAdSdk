@@ -1,0 +1,6 @@
+framework module DDDAdSdk {
+  umbrella header "DDDAdSdk.h"
+
+  export *
+  module * { export * }
+}

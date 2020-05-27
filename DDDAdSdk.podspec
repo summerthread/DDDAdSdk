@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DDDAdSdk'
-  s.version          = '0.1.5'
+  s.version          = '0.1.7'
   s.summary          = 'adSdk 广告sdk'
 
 # This description is used to generate tags and improve search results.
@@ -30,8 +30,8 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'DDDAdSdk/Classes/**/*' #工程需要引入的文件
-  s.public_header_files = "DDDAdSdk/Classes/**/*.h"  #工程需要暴露出来的头文件
+#  s.source_files = 'DDDAdSdk/Classes/**/*.h' #工程需要引入的文件
+#  s.public_header_files = "DDDAdSdk/Classes/**/*.h"  #工程需要暴露出来的头文件
   
   # 是否使用静态库。如果podfile指明了use_frameworks!命令，但是pod仓库需要使用静态库则需要设置
   s.static_framework = true
@@ -42,7 +42,7 @@ TODO: Add long description of the pod here.
   }
 
   #s.frameworks = "ImageIO"  #工程依赖的framework
-  #s.vendored_frameworks = [] #工程依赖的第三方framework
+  s.vendored_frameworks = 'DDDAdSdk.framework' #工程依赖的第三方framework
   #s.libraries = "iconv", "xml2"  #工程依赖的library
   
   # s.public_header_files = 'Pod/Classes/**/*.h'

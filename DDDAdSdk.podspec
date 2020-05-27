@@ -30,7 +30,8 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'DDDAdSdk/Classes/**/*.{h,m,mm}'
+  s.source_files = 'DDDAdSdk/Classes/**/*' #工程需要引入的文件
+  s.public_header_files = "DDDAdSdk/Classes/**/*.h"  #工程需要暴露出来的头文件
   
   # 是否使用静态库。如果podfile指明了use_frameworks!命令，但是pod仓库需要使用静态库则需要设置
   s.static_framework = true
@@ -40,6 +41,10 @@ TODO: Add long description of the pod here.
       'DyAdSdk' => ['DDDAdSdk/Assets/DyAdSdk.bundle']
   }
 
+  #s.frameworks = "ImageIO"  #工程依赖的framework
+  #s.vendored_frameworks = [] #工程依赖的第三方framework
+  #s.libraries = "iconv", "xml2"  #工程依赖的library
+  
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'

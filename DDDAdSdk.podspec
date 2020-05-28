@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DDDAdSdk'
-  s.version          = '0.1.7'
+  s.version          = '0.1.8'
   s.summary          = 'adSdk 广告sdk'
 
 # This description is used to generate tags and improve search results.
@@ -42,11 +42,11 @@ TODO: Add long description of the pod here.
   }
 
   #s.frameworks = "ImageIO"  #工程依赖的framework
-  s.vendored_frameworks = 'DDDAdSdk.framework' #工程依赖的第三方framework
-  #s.libraries = "iconv", "xml2"  #工程依赖的library
+  s.vendored_frameworks = 'DDDAdSdk/Classes/DDDAdSdk.framework' #工程依赖的第三方framework
+  s.libraries = "libc++", "libresolv.9", "libsqlite3", "libz" #工程依赖的library
   
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+   s.frameworks = 'Accelerate', 'AdSupport', 'AVFoundation', 'CoreLocation', 'CoreMedia', 'CoreMotion', 'CoreTelephony', 'MediaPlayer', 'MobileCoreServices', 'StoreKit', 'SystemConfiguration', 'WebKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   
   # s.dependency 'AFNetworking', '~> 4.0.1'

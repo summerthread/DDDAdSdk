@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DDDAdSdk'
-  s.version          = '0.1.14'
+  s.version          = '0.1.15'
   s.summary          = 'adSdk 广告sdk'
 
 # This description is used to generate tags and improve search results.
@@ -51,7 +51,7 @@ TODO: Add long description of the pod here.
    s.frameworks = 'Accelerate', 'AdSupport', 'AVFoundation', 'CoreLocation', 'CoreMedia', 'CoreMotion', 'CoreTelephony', 'MediaPlayer', 'MobileCoreServices', 'StoreKit', 'SystemConfiguration', 'WebKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   
-  # s.dependency 'AFNetworking', '~> 4.0.1'
+   s.dependency 'AFNetworking', '~> 4.0.1'
   
   
 end

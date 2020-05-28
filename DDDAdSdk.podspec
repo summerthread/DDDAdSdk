@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DDDAdSdk'
-  s.version          = '0.1.13'
+  s.version          = '0.1.14'
   s.summary          = 'adSdk 广告sdk'
 
 # This description is used to generate tags and improve search results.
@@ -36,10 +36,11 @@ TODO: Add long description of the pod here.
   # 是否使用静态库。如果podfile指明了use_frameworks!命令，但是pod仓库需要使用静态库则需要设置
   s.static_framework = true
   s.requires_arc = true
-  s.resource_bundles = {
-      'BUAdSDK' => ['DDDAdSdk/Assets/BUAdSDK.bundle'],
-      'DyAdSdk' => ['DDDAdSdk/Assets/DyAdSdk.bundle']
-  }
+#  s.resource_bundles = {
+#      'BUAdSDK' => ['DDDAdSdk/Assets/BUAdSDK.bundle'],
+#      'DyAdSdk' => ['DDDAdSdk/Assets/DyAdSdk.bundle']
+#  }
+  s.resource = 'DDDAdSdk/Assets/BUAdSDK.bundle'
   s.xcconfig         = { 'OTHER_LDFLAGS' => '-ObjC'}
   
   #s.frameworks = "ImageIO"  #工程依赖的framework

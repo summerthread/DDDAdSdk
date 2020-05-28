@@ -44,7 +44,7 @@ TODO: Add long description of the pod here.
   
   #s.frameworks = "ImageIO"  #工程依赖的framework
   s.vendored_frameworks = 'DDDAdSdk/Classes/DDDAdSdk.framework' #工程依赖的第三方framework
-  s.libraries = "c++", "resolv.9", "sqlite3", "z" #工程依赖的library
+  s.libraries = "c++", "resolv.9", "sqlite3", "z" #工程依赖的library  需要移除静态库的lib
   
   # s.public_header_files = 'Pod/Classes/**/*.h'
    s.frameworks = 'Accelerate', 'AdSupport', 'AVFoundation', 'CoreLocation', 'CoreMedia', 'CoreMotion', 'CoreTelephony', 'MediaPlayer', 'MobileCoreServices', 'StoreKit', 'SystemConfiguration', 'WebKit'

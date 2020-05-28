@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DDDAdSdk'
-  s.version          = '0.1.12'
+  s.version          = '0.1.13'
   s.summary          = 'adSdk 广告sdk'
 
 # This description is used to generate tags and improve search results.
@@ -43,7 +43,7 @@ TODO: Add long description of the pod here.
   s.xcconfig         = { 'OTHER_LDFLAGS' => '-ObjC'}
   
   #s.frameworks = "ImageIO"  #工程依赖的framework
-  s.vendored_frameworks = 'DDDAdSdk/Classes/DDDAdSdk.framework','DDDAdSdk/Assets/BUAdSDK.bundle','DDDAdSdk/Assets/DyAdSdk.bundle' #工程依赖的第三方framework
+  s.vendored_frameworks = 'DDDAdSdk/Classes/DDDAdSdk.framework' #工程依赖的第三方framework
   s.libraries = "c++", "resolv.9", "sqlite3", "z" #工程依赖的library  需要移除静态库的lib
   
   # s.public_header_files = 'Pod/Classes/**/*.h'

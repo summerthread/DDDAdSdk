@@ -73,7 +73,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 - (instancetype)initWithAdSize:(CGSize)size;
-
+- (void)configSetDraw_IDWithSize:(CGSize)size andUserID:(NSString *)userID andActionStatus:(void (^)(void))success failure:(void (^)(void))failure;
 /**
  请求的广告数量，最多是3个
  */

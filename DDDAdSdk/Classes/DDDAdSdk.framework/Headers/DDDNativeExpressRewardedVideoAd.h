@@ -107,7 +107,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)loadAdData;
 
-
+- (void)configSetRewardSlotIdWithUserId:(NSString *)userId andActionSuccess:(void (^)(void))success failure:(void (^)(void))failure;
 @end
 
 NS_ASSUME_NONNULL_END

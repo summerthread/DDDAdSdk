@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DDDAdSdk'
-  s.version          = '0.1.16'
+  s.version          = '1.0.0'
   s.summary          = 'adSdk 广告sdk'
 
 # This description is used to generate tags and improve search results.

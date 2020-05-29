@@ -71,9 +71,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak, nullable) id<DDDNativeExpressAdViewDelegate> delegate;
 
-
-- (instancetype)initWithAdSize:(CGSize)size;
-- (void)configSetDraw_IDWithSize:(CGSize)size andUserID:(NSString *)userID andActionStatus:(void (^)(void))success failure:(void (^)(void))failure;
+- (void)configSetDraw_IDWithSize:(CGSize)size andUserID:(NSString *)userID andActionStatus:(void (^)(void))success failure:(void (^)(NSInteger errorCode))failure;
 /**
  请求的广告数量，最多是3个
  */

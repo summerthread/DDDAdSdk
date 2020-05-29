@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 初始化sdk
 /// @param success 成功
 /// @param failure 失败
-+ (void)configSetManager:(void (^)(void))success failure:(void (^)(void))failure;
++ (void)configSetManager:(void (^)(void))success failure:(void (^)(NSInteger errorCode))failure;
 
 
 @end

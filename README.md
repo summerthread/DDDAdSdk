@@ -1,5 +1,5 @@
 # DDDAdSdk
-<<<<<<< HEAD
+DDDAdSdk  最好使用pod接入
 
 [![CI Status](https://img.shields.io/travis/summerthread/DDDAdSdk.svg?style=flat)](https://travis-ci.org/summerthread/DDDAdSdk)
 [![Version](https://img.shields.io/cocoapods/v/DDDAdSdk.svg?style=flat)](https://cocoapods.org/pods/DDDAdSdk)
@@ -18,7 +18,7 @@ DDDAdSdk is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'DDDAdSdk'
+pod 'DDDAdSdk', '~> 1.0.0'
 ```
 
 ## Author
@@ -29,5 +29,4 @@ summerthread, summerthread@163.com
 
 DDDAdSdk is available under the MIT license. See the LICENSE file for more info.
 =======
-sdsdk
->>>>>>> 7d16732c36e46ecdb432a850da8145254029490a
+

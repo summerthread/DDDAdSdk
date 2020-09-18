@@ -1,0 +1,6 @@
+framework module DDDAdZYSdk {
+  umbrella header "DDDAdZYSdk.h"
+
+  export *
+  module * { export * }
+}

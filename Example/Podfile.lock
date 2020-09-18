@@ -1,16 +1,58 @@
 PODS:
-  - DDDAdSdk (0.1.0)
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - Bytedance-UnionAD (3.1.0.9)
+  - DDDAdSdk (1.0.0.1):
+    - AFNetworking (~> 4.0.1)
+    - Bytedance-UnionAD (~> 3.1.0.5)
+    - DDDAdZYSdk (~> 1.0.0.4)
+    - GDTMobSDK (~> 4.11.9)
+  - DDDAdZYSdk (1.0.0.4):
+    - AFNetworking (~> 4.0.1)
+    - SDWebImage (~> 5.8.4)
+  - GDTMobSDK (4.11.11):
+    - GDTMobSDK/GDTMobSDK (= 4.11.11)
+  - GDTMobSDK/GDTMobSDK (4.11.11)
+  - SDWebImage (5.8.4):
+    - SDWebImage/Core (= 5.8.4)
+  - SDWebImage/Core (5.8.4)
 
 DEPENDENCIES:
   - DDDAdSdk (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - Bytedance-UnionAD
+    - DDDAdZYSdk
+    - GDTMobSDK
+    - SDWebImage
 
 EXTERNAL SOURCES:
   DDDAdSdk:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DDDAdSdk: d7a11d5e2051f1c6ed25dbd7a953ce77fc75b619
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  Bytedance-UnionAD: b841f3266c48da4f1153032589ec95dc1f26e131
+  DDDAdSdk: f919123f0fca5655414553b27c1c779522567145
+  DDDAdZYSdk: 345ecf939415a277e0ba63635150d1e99599f859
+  GDTMobSDK: 5603f2ed5c565f798b9dd13d3dbfb582594ea93a
+  SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
 
-PODFILE CHECKSUM: 953d9b3a98a9862d49bee76e534f4b4976e0098f
+PODFILE CHECKSUM: c9b6ac61c0a1009203e2b1c856cdb159eb796e1e
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.2
